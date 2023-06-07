@@ -1,10 +1,12 @@
+import { UserButton } from '@clerk/nextjs'
 import React from 'react'
 
 const DashboardPage = () => {
   return (
     <div>
         <h1>protected route</h1>
-        <a href="/api/auth/logut">Logout</a>
+
+        <UserButton afterSignOutUrl="/"/>
     </div>
   )
 }

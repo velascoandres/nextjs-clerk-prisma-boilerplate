@@ -25,5 +25,8 @@
     "tsx": "^3.7.1",
     "turbo": "^1.9.3"
   },
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@1.22.19",
+  "dependencies": {
+    "@clerk/nextjs": "^4.19.1"
+  }
 }

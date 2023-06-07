@@ -1,12 +1,13 @@
 import { prisma } from "database";
+import Link from "next/link";
 
 export default async function IndexPage() {
-  const users = await prisma.user.findMany();
-
   return (
     <div>
       <h1>Hello World</h1>
-      <pre>{JSON.stringify(users, null, 2)}</pre>
+      <Link href="/auth/sign-in">Sign in</Link>
+      <br />
+      <Link href="/auth/sign-up">Sign up</Link>
     </div>
   );
 }
