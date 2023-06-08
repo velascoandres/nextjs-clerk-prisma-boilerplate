@@ -1,4 +1,4 @@
-import { prisma } from "database";
+import { Button } from 'ui';
 import Link from "next/link";
 
 export default async function IndexPage() {
@@ -8,6 +8,7 @@ export default async function IndexPage() {
       <Link href="/auth/sign-in">Sign in</Link>
       <br />
       <Link href="/auth/sign-up">Sign up</Link>
+      <Button />
     </div>
   );
 }
